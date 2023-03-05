@@ -1,12 +1,13 @@
 using UnityEngine;
+using TMPro;
 using UnityEngine.UI;
 
 public class DiceGameLoaded : MonoBehaviour {
 
     public string inputValue = "1";
 
-    public Text outputText;
-    public InputField inputField;
+    public TMP_Text outputText;
+    public TMP_InputField inputField;
     public Button button;
 
     int throwDice() {
