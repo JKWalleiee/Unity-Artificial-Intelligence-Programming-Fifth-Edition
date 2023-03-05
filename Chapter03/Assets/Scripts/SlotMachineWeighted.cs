@@ -100,7 +100,7 @@ public class SlotMachineWeighted : MonoBehaviour {
 		}
 		else if (firstReelResult == thirdReelResult) {			
 			betResult.text = "YOU WIN " + (betAmount*2).ToString();
-            credits -= (betAmount*2);
+            credits += (betAmount*2);
 		}
 		else {
 			betResult.text = "YOU LOSE!";
