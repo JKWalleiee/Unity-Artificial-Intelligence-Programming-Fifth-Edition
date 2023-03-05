@@ -67,7 +67,10 @@ public class PlayerTankController : MonoBehaviour {
     }
 
     void UpdateWeapon() {
-        elapsedTime += Time.deltaTime;
+        if (elapsedTime <= shootRate) {
+            elapsedTime += Time.deltaTime;
+        }
+        
         if (Input.GetMouseButtonDown(0)) {
             if (elapsedTime >= shootRate) {
                 //Reset the time
