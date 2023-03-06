@@ -21,7 +21,7 @@ public class Wander : MonoBehaviour
     private float minZ = -45.0f;
 
     [SerializeField]
-    private float maxZ = -45.0f;
+    private float maxZ = 45.0f;
 
     [SerializeField]
     private float targetReactionRadius = 5.0f;

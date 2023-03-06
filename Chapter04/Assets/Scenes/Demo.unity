@@ -721,7 +721,7 @@ MonoBehaviour:
   targetTransform: {fileID: 1569615432}
   movementSpeed: 10
   rotSpeed: 2
-  targerReactionRadius: 5
+  targetReactionRadius: 5
 --- !u!54 &1163097492
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1320,7 +1320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bDebug: 1
-  targetAffiliation: 1
+  targetAffiliation: 0
   detectionRate: 1
 --- !u!114 &1876867372
 MonoBehaviour:
@@ -1339,7 +1339,7 @@ MonoBehaviour:
   minX: -45
   maxX: 45
   minZ: -45
-  maxZ: -45
+  maxZ: 45
   targetReactionRadius: 5
   targetVerticalOffset: 0.5
 --- !u!1 &1954060881
@@ -1447,7 +1447,7 @@ LightingSettings:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Settings.lighting
-  serializedVersion: 5
+  serializedVersion: 4
   m_GIWorkflowMode: 1
   m_EnableBakedLightmaps: 1
   m_EnableRealtimeLightmaps: 0
@@ -1487,7 +1487,7 @@ LightingSettings:
   m_LightProbeSampleCountMultiplier: 4
   m_PVRBounces: 2
   m_PVRMinBounces: 2
-  m_PVREnvironmentImportanceSampling: 0
+  m_PVREnvironmentMIS: 1
   m_PVRFilteringMode: 0
   m_PVRDenoiserTypeDirect: 0
   m_PVRDenoiserTypeIndirect: 0
@@ -1502,4 +1502,3 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaIndirect: 2
   m_PVRFilteringAtrousPositionSigmaAO: 1
   m_PVRTiledBaking: 0
-  m_NumRaysToShootPerTexel: -1
