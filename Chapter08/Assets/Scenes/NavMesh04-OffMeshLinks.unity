@@ -237,6 +237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetMarker: {fileID: 114881581}
+  verticalOffset: 10
 --- !u!4 &241388915
 Transform:
   m_ObjectHideFlags: 0
@@ -488,7 +489,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6820868039466922584, guid: cbd85cd29857cdb47aba39e184efab79,
@@ -552,7 +552,6 @@ PrefabInstance:
       value: Tank 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: cbd85cd29857cdb47aba39e184efab79, type: 3}
 --- !u!1 &420835930
 GameObject:
@@ -669,7 +668,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 95
+  m_StaticEditorFlags: 127
   m_IsActive: 1
 --- !u!4 &481618873
 Transform:
@@ -1716,7 +1715,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6820868039466922584, guid: cbd85cd29857cdb47aba39e184efab79,
@@ -1780,5 +1778,4 @@ PrefabInstance:
       value: Tank 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: cbd85cd29857cdb47aba39e184efab79, type: 3}
