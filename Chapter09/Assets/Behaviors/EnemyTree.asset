@@ -51,7 +51,7 @@ MonoBehaviour:
     </inputParams>\n      <outputParams />\n      <localParams />\n    </ConditionEvalNode>\n   
     <ActionNode id=\"9\" action=\"Chapter09/Shoot\">\n      <inputParams>\n       
     <inputValues>\n          <entry name=\"delay\" type=\"System.Single\" isBlackboard=\"False\"
-    value=\"30\" />\n          <entry name=\"shootPoint\" type=\"UnityEngine.Transform\"
+    value=\"5\" />\n          <entry name=\"shootPoint\" type=\"UnityEngine.Transform\"
     isBlackboard=\"True\" blackboard=\"shootPoint\" />\n          <entry name=\"bullet\"
     type=\"UnityEngine.GameObject\" isBlackboard=\"True\" blackboard=\"bullet\" />\n         
     <entry name=\"velocity\" type=\"System.Single\" isBlackboard=\"False\" value=\"30\"
@@ -99,22 +99,23 @@ MonoBehaviour:
     <RepeatDecorator id=\"1\" />\n        </data>\n      </_data>\n    </PrioritySelectorNode>\n   
     <ConditionEvalNode id=\"8\">\n      <_data>\n        <data breakpoint=\"0\" selected=\"False\"
     position=\"165 414\" name=\"Chapter09/IsNight\" description=\"Eval\" cardinality=\"1\"
-    hasParent=\"False\">\n          <BehaviorTree id=\"0\" />\n          <ConditionEvalNode
-    id=\"8\" />\n        </data>\n      </_data>\n    </ConditionEvalNode>\n    <ActionNode
-    id=\"4\">\n      <_data>\n        <data breakpoint=\"0\" selected=\"False\" position=\"165
-    414\" name=\"Chapter09/SleepForever\" description=\"Low-cost infinite action
-    that never ends. It does not consume CPU at all.\" cardinality=\"0\" hasParent=\"False\">\n         
-    <BehaviorTree id=\"0\" />\n          <ActionNode id=\"4\" />\n        </data>\n     
-    </_data>\n    </ActionNode>\n    <ConditionEvalNode id=\"10\">\n      <_data>\n       
-    <data breakpoint=\"0\" selected=\"False\" position=\"412 413\" name=\"Perception/IsTargetClose\"
-    description=\"Eval\" cardinality=\"1\" hasParent=\"True\">\n          <BehaviorTree
-    id=\"0\" />\n          <ConditionEvalNode id=\"10\" />\n          <PrioritySelectorNode
-    id=\"6\" />\n        </data>\n      </_data>\n    </ConditionEvalNode>\n    <ActionNode
-    id=\"9\">\n      <_data>\n        <data breakpoint=\"0\" selected=\"False\" position=\"412
-    413\" name=\"Chapter09/Shoot\" description=\"Periodically clones a 'bullet' and
-    shoots it through the Forward axis with the specified velocity. This action never
-    ends.\" cardinality=\"0\" hasParent=\"False\">\n          <BehaviorTree id=\"0\"
-    />\n          <ActionNode id=\"9\" />\n        </data>\n      </_data>\n    </ActionNode>\n   
+    hasParent=\"True\">\n          <BehaviorTree id=\"0\" />\n          <ConditionEvalNode
+    id=\"8\" />\n          <PrioritySelectorNode id=\"6\" />\n        </data>\n     
+    </_data>\n    </ConditionEvalNode>\n    <ActionNode id=\"4\">\n      <_data>\n       
+    <data breakpoint=\"0\" selected=\"False\" position=\"165 414\" name=\"Chapter09/SleepForever\"
+    description=\"Low-cost infinite action that never ends. It does not consume CPU
+    at all.\" cardinality=\"0\" hasParent=\"False\">\n          <BehaviorTree id=\"0\"
+    />\n          <ActionNode id=\"4\" />\n        </data>\n      </_data>\n    </ActionNode>\n   
+    <ConditionEvalNode id=\"10\">\n      <_data>\n        <data breakpoint=\"0\"
+    selected=\"False\" position=\"412 413\" name=\"Perception/IsTargetClose\" description=\"Eval\"
+    cardinality=\"1\" hasParent=\"True\">\n          <BehaviorTree id=\"0\" />\n         
+    <ConditionEvalNode id=\"10\" />\n          <PrioritySelectorNode id=\"6\" />\n       
+    </data>\n      </_data>\n    </ConditionEvalNode>\n    <ActionNode id=\"9\">\n     
+    <_data>\n        <data breakpoint=\"0\" selected=\"False\" position=\"412 413\"
+    name=\"Chapter09/Shoot\" description=\"Periodically clones a 'bullet' and shoots
+    it through the Forward axis with the specified velocity. This action never ends.\"
+    cardinality=\"0\" hasParent=\"False\">\n          <BehaviorTree id=\"0\" />\n         
+    <ActionNode id=\"9\" />\n        </data>\n      </_data>\n    </ActionNode>\n   
     <ConditionEvalNode id=\"14\">\n      <_data>\n        <data breakpoint=\"0\"
     selected=\"False\" position=\"650 408\" name=\"Perception/IsTargetClose\" description=\"Eval\"
     cardinality=\"1\" hasParent=\"True\">\n          <BehaviorTree id=\"0\" />\n         
