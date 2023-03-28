@@ -40,12 +40,12 @@ MonoBehaviour:
     <SubbehaviorNode id=\"15\" />\n            </child>\n          </GuardAndNode>\n       
     </elem>\n      </children>\n      <inputParams />\n      <outputParams />\n     
     <localParams />\n    </PrioritySelectorNode>\n    <ConditionEvalNode id=\"8\"
-    policy=\"ATOMIC_CHECK\" name=\"Chapter09/IsNight\">\n      <inputParams />\n     
-    <outputParams />\n      <localParams />\n    </ConditionEvalNode>\n    <ActionNode
-    id=\"4\" action=\"Chapter09/SleepForever\">\n      <inputParams />\n      <outputParams
-    />\n      <localParams />\n    </ActionNode>\n    <ConditionEvalNode id=\"10\"
-    policy=\"ATOMIC_CHECK\" name=\"Perception/IsTargetClose\">\n      <inputParams>\n       
-    <inputValues>\n          <entry name=\"target\" type=\"UnityEngine.GameObject\"
+    policy=\"WAIT_UNTIL_TRUE_AND_COMPLETE\" name=\"Chapter09/IsNight\">\n      <inputParams
+    />\n      <outputParams />\n      <localParams />\n    </ConditionEvalNode>\n   
+    <ActionNode id=\"4\" action=\"Chapter09/SleepForever\">\n      <inputParams />\n     
+    <outputParams />\n      <localParams />\n    </ActionNode>\n    <ConditionEvalNode
+    id=\"10\" policy=\"WAIT_UNTIL_FALSE_AND_FAIL\" name=\"Perception/IsTargetClose\">\n     
+    <inputParams>\n        <inputValues>\n          <entry name=\"target\" type=\"UnityEngine.GameObject\"
     isBlackboard=\"True\" blackboard=\"player\" />\n          <entry name=\"closeDistance\"
     type=\"System.Single\" isBlackboard=\"False\" value=\"7\" />\n        </inputValues>\n     
     </inputParams>\n      <outputParams />\n      <localParams />\n    </ConditionEvalNode>\n   
@@ -56,7 +56,7 @@ MonoBehaviour:
     type=\"UnityEngine.GameObject\" isBlackboard=\"True\" blackboard=\"bullet\" />\n         
     <entry name=\"velocity\" type=\"System.Single\" isBlackboard=\"False\" value=\"30\"
     />\n        </inputValues>\n      </inputParams>\n      <outputParams />\n     
-    <localParams />\n    </ActionNode>\n    <ConditionEvalNode id=\"14\" policy=\"ATOMIC_CHECK\"
+    <localParams />\n    </ActionNode>\n    <ConditionEvalNode id=\"14\" policy=\"WAIT_UNTIL_TRUE_AND_COMPLETE\"
     name=\"Perception/IsTargetClose\">\n      <inputParams>\n        <inputValues>\n         
     <entry name=\"target\" type=\"UnityEngine.GameObject\" isBlackboard=\"True\"
     blackboard=\"player\" />\n          <entry name=\"closeDistance\" type=\"System.Single\"
@@ -66,7 +66,7 @@ MonoBehaviour:
     <inputValues>\n          <entry name=\"target\" type=\"UnityEngine.GameObject\"
     isBlackboard=\"True\" blackboard=\"player\" />\n        </inputValues>\n     
     </inputParams>\n      <outputParams />\n      <localParams />\n    </ActionNode>\n   
-    <ConditionEvalNode id=\"16\" policy=\"ATOMIC_CHECK\" name=\"AlwaysTrue\">\n     
+    <ConditionEvalNode id=\"16\" policy=\"WAIT_UNTIL_TRUE_AND_COMPLETE\" name=\"AlwaysTrue\">\n     
     <inputParams />\n      <outputParams />\n      <localParams />\n    </ConditionEvalNode>\n   
     <SubbehaviorNode id=\"15\">\n      <_guid>23a4bbec9d68e58448b2f39637bbb586</_guid>\n     
     <inputParams>\n        <inputValues>\n          <entry name=\"wanderArea\" type=\"UnityEngine.GameObject\"
