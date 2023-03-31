@@ -54,6 +54,7 @@ public class AITankController : FSM
             case FSMState.Attack: UpdateAttackState(); break;
             case FSMState.Dead: UpdateDeadState(); break;
         }
+        
 
         elapsedTime += Time.deltaTime;
 
