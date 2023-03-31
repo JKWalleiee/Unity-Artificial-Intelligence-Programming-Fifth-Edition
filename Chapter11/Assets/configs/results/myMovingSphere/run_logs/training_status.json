@@ -1,0 +1,29 @@
+{
+    "MovingSphere": {
+        "checkpoints": [
+            {
+                "steps": 353464,
+                "file_path": "results/myMovingSphere/MovingSphere/MovingSphere-353464.onnx",
+                "reward": 1.0,
+                "creation_time": 1680214480.675342,
+                "auxillary_file_paths": [
+                    "results/myMovingSphere/MovingSphere/MovingSphere-353464.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 353464,
+            "file_path": "results/myMovingSphere/MovingSphere.onnx",
+            "reward": 1.0,
+            "creation_time": 1680214480.675342,
+            "auxillary_file_paths": [
+                "results/myMovingSphere/MovingSphere/MovingSphere-353464.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.8.1+cu102"
+    }
+}
